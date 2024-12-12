@@ -16,16 +16,16 @@ function Home({ language, isDarkMode }) {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-b bg-light dark:bg-dark border-b-4 border-b-gray-200"
+      className="relative bg-gradient-to-b bg-light dark:bg-dark border-b-4 border-b-gray-200 pixel"
     >
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"></canvas>
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-8 p-6 md:p-12 font-Pixelify tracking-widest ">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-8 p-6 md:p-12 ">
         <div className="flex flex-col space-y-6 md:text-left ">
 
           <Name language={language}/>
 
           <div className="text-end">
-            <p className="text-gray-800 dark:text-gray-300">
+            <p className="text-black dark:text-white">
               {language==="ES" ? "Desarrollador apasionado por crear soluciones innovadoras, en el desarrollo web y optimización de sistemas digitales.": "A passionate developer focused on creating innovative solutions in web development and digital systems optimization."}
             </p>
           </div>

@@ -4,9 +4,9 @@ function About({ language }) {
   return (
     <section
       id="about"
-      className="section bg-gradient-to-b from-green-200 to-green-300 dark:bg-dark overflow-hidden pt-6 px-4 font-Pixelify tracking-widest border-b-4 border-b-gray-200 pb-6"
+      className="section bg-light-reverse dark:bg-dark overflow-hidden pt-6 px-4 pixel border-b-4 border-b-gray-200 pb-6"
     >
-      <h2 className="section__title text-3xl font-bold text-center text-gray-800 dark:text-gray-200">
+      <h2 className="section__title text-3xl font-bold text-center text-gray-900 dark:text-gray-100">
         {language === "ES" ? "Acerca de Mí" : "About me"}
       </h2>
 

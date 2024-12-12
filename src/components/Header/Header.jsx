@@ -9,7 +9,7 @@ function Header({ isDarkMode, setIsDarkMode, language, setLanguage }) {
 
   const handleToggleMenu = () => {
     setIsOpen((prev) => !prev);
-    console.log("isOpen:", !isOpen); // Depuración
+    console.log("isOpen:", !isOpen); 
   };
 
   const toggleDarkMode = () => {
@@ -22,7 +22,7 @@ function Header({ isDarkMode, setIsDarkMode, language, setLanguage }) {
   };
 
   return (
-    <header className="z-50 sticky top-0 w-full bg-light dark:bg-dark">
+    <header className="z-50 sticky top-0 w-full bg-light dark:bg-dark pixel">
       <nav className="container mx-auto flex items-center justify-between p-3">
         {/* Logo */}
         <Logo />

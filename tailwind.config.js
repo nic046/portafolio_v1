@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Pixelify: ["Pixelify Sans", "sans-serif"]
+        Pixelify: ["Doto", "sans-serif"]
       }
     },
   },
