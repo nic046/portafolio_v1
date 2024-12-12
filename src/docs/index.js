@@ -1,0 +1,1 @@
+export {default as cv} from "./cv_Nicolás Morón Vallejo_software.pdf"
