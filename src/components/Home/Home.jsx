@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { initCanvas } from "../../utils/index.js"
 import { profile } from "../../images/index";
-import { cv } from "../../docs";
+import { cv_en, cv_es } from "../../docs";
 import Name from "./Name.jsx";
 import ContactMe from "./ContactMe.jsx";
 
@@ -34,10 +34,10 @@ function Home({ language, isDarkMode, sectionRefs }) {
           <ContactMe />
           <div className="flex justify-end">
             <a
-              href={cv}
-              download="Nicolas_Moron_cv"
+              href={language==="ES"? cv_es: cv_en}
+              download={language==="ES"? cv_es: cv_en}
               rel="noreferrer nofollow"
-              className="btn btn-primary bg-blue-600 text-white py-2 px-4 rounded-md shadow-lg hover:bg-blue-700 transition"
+              className="btn btn-primary cursor-pointer bg-blue-600 text-white py-2 px-4 rounded-md shadow-lg hover:bg-blue-700 transition"
             >
               {language==="ES" ? "Descargar CV":"Download CV"}
             </a>

@@ -29,7 +29,7 @@ function Skills({ language, sectionRefs }) {
 
         <div className="mt-12 pixel">
           <h3 className="text-2xl font-semibold text-center mb-4 dark:text-gray-200 ">
-            Habilidades Blandas
+            {language?"Habilidades Blandas":"Soft Skills"}
           </h3>
           <div className="flex flex-wrap justify-center gap-4 ">
             {(language === "ES" ? softSkills : softSkills_en).map(

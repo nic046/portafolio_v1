@@ -6,7 +6,7 @@ export const projectsData = [
       image: BookingApp,
       title: "Booking App",
       description:
-        "La siguiente aplicación utiliza react y tailwind para consumir una API. De esta manera realizar reservas a hoteles y ver datos de los mismos. Tambien permite registrar  usuarios y mantener un registro de las reservas",
+        "Este proyecto es una aplicación de reservas de hoteles desarrollada con React, utilizando herramientas como React Hook Form, React Router DOM, Redux Toolkit, y Tailwind CSS. Permite a los usuarios explorar hoteles disponibles, aplicar filtros por precio y ciudad, y ver detalles específicos, como ubicación y reviews. La funcionalidad de login y registro asegura acceso protegido a características avanzadas como reservas. El diseño responsivo y las integraciones con APIs y librerías como Pigeon Maps brindan una experiencia moderna y completa.",
       demo: "https://booking-app-nico.netlify.app/",
       code: "https://github.com/nic046/booking",
     },
@@ -15,7 +15,7 @@ export const projectsData = [
       image: Pokemon,
       title: "PokeApiDex",
       description:
-        "PokeApi desarrollada react y css para dar estilos. Se impleto el uso de axios para acceder a la información, uso de hooks personalizados y se consumio de forma satisfactorio las APIs.",
+        "Desarrollé una Pokedex interactiva con React y ViteJs, conectada a la API de PokéAPI. Implementé rutas protegidas, estado global con useContext y useReducer, y paginación para listar Pokémon. Los usuarios pueden buscar Pokémon por nombre, aplicar filtros por tipo, y explorar detalles como estadísticas, movimientos y habilidades. Añadí validaciones de entrada, manejo de errores, y diseño responsivo.",
       demo: "https://api-poke-nicolas.netlify.app/#/pokedex",
       code: "https://github.com/nic046/Poke-api",
     },
@@ -33,7 +33,7 @@ export const projectsData = [
       image: Rick,
       title: "Api Rick and Morty",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ex numquam magni repellat fugiat nemo mollitia porro hic? Tempora blanditiis eaque quis, mollitia praesentium ipsum animi quasi nostrum accusamus veniam!.",
+        "Desarrollé una aplicación con ViteJs y React utilizando la API de Rick and Morty. Muestra información detallada de una ubicación aleatoria o seleccionada por el usuario, incluyendo residentes y sus características. La app valida entradas, maneja errores, y usa un custom hook para consumir la API. Se implementó renderizado condicional, paginación para residentes, y un sistema de sugerencias para ubicaciones. Desplegada en Vercel/GitHub con diseño responsivo y estilos personalizados.",
       demo: "https://rick-and-morty-api-nico.netlify.app/",
       code: "https://github.com/nic046/Rick-and-Morty-Api",
     },
@@ -42,7 +42,7 @@ export const projectsData = [
       image: Weather,
       title: "WeatherApp",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ex numquam magni repellat fugiat nemo mollitia porro hic? Tempora blanditiis eaque quis, mollitia praesentium ipsum animi quasi nostrum accusamus veniam!.",
+        "Desarrollé una aplicación del clima utilizando ViteJs y React, integrada con la API de OpenWeatherMap. La app emplea la geolocalización del navegador para mostrar datos en tiempo real, como temperatura, velocidad del viento y presión atmosférica. Los usuarios pueden alternar entre Celsius y Fahrenheit y buscar el clima por ciudad. Incluye fondos dinámicos según el clima, manejo de errores y pantalla de carga. Incluye un diseño responsivo y estilos personalizados en CSS.",
       demo: "https://weather-app-nico-academlo.netlify.app/",
       code: "https://github.com/nic046/Project-02-react-",
     },
