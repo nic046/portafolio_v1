@@ -1,9 +1,10 @@
 import React from "react";
 
-function About({ language }) {
+function About({ language, sectionRefs }) {
   return (
     <section
       id="about"
+      ref={(el) => (sectionRefs.current[1] = el)}
       className="section bg-light-reverse dark:bg-dark overflow-hidden pt-6 px-4 pixel border-b-4 border-b-gray-200 pb-6"
     >
       <h2 className="section__title text-3xl font-bold text-center text-gray-900 dark:text-gray-100">

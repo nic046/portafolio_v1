@@ -5,7 +5,7 @@ import { cv } from "../../docs";
 import Name from "./Name.jsx";
 import ContactMe from "./ContactMe.jsx";
 
-function Home({ language, isDarkMode }) {
+function Home({ language, isDarkMode, sectionRefs }) {
   const canvasRef = useRef(null)
 
   useEffect(() => {
@@ -16,6 +16,7 @@ function Home({ language, isDarkMode }) {
   return (
     <section
       id="home"
+      ref={(el) => (sectionRefs.current[0] = el)}
       className="relative bg-gradient-to-b bg-light dark:bg-dark border-b-4 border-b-gray-200 pixel"
     >
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"></canvas>

@@ -6,10 +6,11 @@ import {
 } from "react-icons/fa";
 import SendEmail from "./SendEmail";
 
-const Contact = ({ language }) => {
+const Contact = ({ language, sectionRefs }) => {
   return (
     <section
       id="contact"
+      ref={(el) => (sectionRefs.current[4] = el)}
       className="section bg-light dark:bg-dark py-10 border-b-4 border-b-gray-200 pixel text-black dark:text-gray-100"
     >
       <h2 className="section__title text-2xl font-bold text-center mb-6">

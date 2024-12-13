@@ -1,37 +1,21 @@
-function Nav({ language }) {
+function Nav({ language, navLinksRefs, activeIndex }) {
   return (
-    <ul className="flex flex-col text-lg lg:flex-row lg:space-x-10 p-4 lg:p-0 text-gray-900 dark:text-gray-100 text-center">
-      <li>
-        <a href="#home" className="hover:text-gray-900 dark:hover:text-white">
-          {language === "ES" ? "Inicio" : "Home"}
-        </a>
-      </li>
-      <li>
-        <a href="#about" className="hover:text-gray-900 dark:hover:text-white">
-          {language === "ES" ? "Acerca de Mí" : "About Me"}
-        </a>
-      </li>
-      <li>
-        <a href="#skills" className="hover:text-gray-900 dark:hover:text-white">
-          {language === "ES" ? "Habilidades" : "Skills"}
-        </a>
-      </li>
-      <li>
-        <a
-          href="#projects"
-          className="hover:text-gray-900 dark:hover:text-white"
-        >
-          {language === "ES" ? "Portafolio" : "Portfolio"}
-        </a>
-      </li>
-      <li>
-        <a
-          href="#contact"
-          className="hover:text-gray-900 dark:hover:text-white"
-        >
-          {language === "ES" ? "Contacto" : "Contact"}
-        </a>
-      </li>
+    <ul className="flex flex-col text-lg lg:flex-row lg:space-x-4 p-2 lg:p-0 text-gray-600 dark:text-gray-300 text-center">
+      {["home", "about", "skills", "projects", "contact"].map((id, index) => (
+        <li key={id}>
+          <a
+            href={`#${id}`}
+            ref={(el) => (navLinksRefs.current[index] = el)}
+            className={`hover:text-black dark:hover:text-white ${
+              index === activeIndex ? "active underline_effect" : ""
+            }`}
+          >
+            {language === "ES"
+              ? ["Inicio", "Acerca de Mí", "Habilidades", "Portafolio", "Contacto"][index]
+              : ["Home", "About Me", "Skills", "Portfolio", "Contact"][index]}
+          </a>
+        </li>
+      ))}
     </ul>
   );
 }

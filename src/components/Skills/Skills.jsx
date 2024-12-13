@@ -1,9 +1,10 @@
 import { softSkills, softSkills_en, skills, skills_en } from "./Description";
 
-function Skills({ language }) {
+function Skills({ language, sectionRefs }) {
   return (
     <section
       id="skills"
+      ref={(el) => (sectionRefs.current[2] = el)}
       className="bg-light dark:bg-dark py-12 border-b-4 border-b-gray-200"
     >
       <h2 className="text-2xl font-semibold text-center mb-4 dark:text-gray-200 pixel">

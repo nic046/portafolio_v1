@@ -4,12 +4,11 @@ import Nav from "./Nav";
 import Logo from "./Logo";
 import MenuToggle from "./MenuToggle";
 
-function Header({ isDarkMode, setIsDarkMode, language, setLanguage }) {
+function Header({ isDarkMode, setIsDarkMode, language, setLanguage, navLinksRefs, activeIndex }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleMenu = () => {
     setIsOpen((prev) => !prev);
-    console.log("isOpen:", !isOpen); 
   };
 
   const toggleDarkMode = () => {
@@ -29,7 +28,11 @@ function Header({ isDarkMode, setIsDarkMode, language, setLanguage }) {
 
         {/* Navigation Menu */}
         <div className="hidden lg:flex justify-center items-center flex-1">
-          <Nav language={language} />
+          <Nav
+            language={language}
+            navLinksRefs={navLinksRefs}
+            activeIndex={activeIndex}
+          />
         </div>
 
         {/* Dark Mode and Language Toggle */}
@@ -56,7 +59,7 @@ function Header({ isDarkMode, setIsDarkMode, language, setLanguage }) {
           isOpen ? "relative bg-light dark:bg-dark" : "hidden"
         }`}
       >
-        <Nav language={language} />
+        <Nav language={language} navLinksRefs={navLinksRefs} activeIndex={activeIndex}/>
       </div>
     </header>
   );
