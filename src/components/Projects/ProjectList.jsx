@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ProjectList = ({ language, projectsData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const projectsToShow = 3;
+  const projectsToShow = 2;
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
