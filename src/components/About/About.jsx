@@ -5,7 +5,7 @@ function About({ language, sectionRefs }) {
     <section
       id="about"
       ref={(el) => (sectionRefs.current[1] = el)}
-      className="section bg-light-reverse dark:bg-dark overflow-hidden py-14 px-4 pixel border-b-4 border-b-gray-200"
+      className="section bg-light-reverse dark:bg-dark overflow-hidden py-20 px-4 pixel border-b-4 border-b-gray-200"
     >
       <h2 className="section__title text-3xl font-bold text-center text-gray-900 dark:text-gray-100">
         {language === "ES" ? "Acerca de Mí" : "About me"}

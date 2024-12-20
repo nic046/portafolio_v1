@@ -11,7 +11,7 @@ const Contact = ({ language, sectionRefs }) => {
     <section
       id="contact"
       ref={(el) => (sectionRefs.current[4] = el)}
-      className="section bg-light dark:bg-dark py-14 border-b-4 border-b-gray-200 pixel text-black dark:text-gray-100 "
+      className="section bg-light dark:bg-dark py-20 border-b-4 border-b-gray-200 pixel text-black dark:text-gray-100 "
     >
       <h2 className="section__title text-2xl font-bold text-center mb-6">
         {language === "ES" ? "Contacto" : "Contact"}

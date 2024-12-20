@@ -5,7 +5,7 @@ function Skills({ language, sectionRefs }) {
     <section
       id="skills"
       ref={(el) => (sectionRefs.current[2] = el)}
-      className="bg-light dark:bg-dark py-14 border-b-4 border-b-gray-200"
+      className="bg-light dark:bg-dark py-20 border-b-4 border-b-gray-200"
     >
       <h2 className="text-2xl font-semibold text-center mb-4 dark:text-gray-200 pixel">
         {language === "ES" ? "Habilidades técnicas" : "Technical skills"}
