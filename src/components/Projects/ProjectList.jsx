@@ -32,18 +32,18 @@ const ProjectList = ({ language, projectsData }) => {
     <div className="relative">
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 -translate-y-1/2 left-4 bg-blue-500/50 text-white p-2 rounded-full hover:bg-blue-700 z-10"
+        className="absolute top-1/2 -translate-y-1/2 left-8 bg-blue-500/50 text-white p-2 rounded-full hover:bg-blue-700 z-10"
       >
         <FaChevronLeft size={20} />
       </button>
-      <div className="flex flex-col md:flex-row items-center justify-center transition-all duration-300">
+      <div className="flex flex-col md:flex-row items-center justify-center transition-all duration-300 gap-8">
         {currentProjects.map((project) => (
           <ProjectCard key={project.id} project={project} language={language} />
         ))}
       </div>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 -translate-y-1/2 right-4 bg-blue-500/50 text-white p-2 rounded-full hover:bg-blue-700 z-10"
+        className="absolute top-1/2 -translate-y-1/2 right-8 bg-blue-500/50 text-white p-2 rounded-full hover:bg-blue-700 z-10"
       >
         <FaChevronRight size={20} />
       </button>

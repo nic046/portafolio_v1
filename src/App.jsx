@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div className="scroll-smooth focus:scroll-auto">
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} language={language} setLanguage={setLanguage} navLinksRefs={navLinksRefs} activeIndex={activeIndex}/>
         <Home isDarkMode={isDarkMode} language={language} sectionRefs={sectionRefs}/>
         <About language={language} sectionRefs={sectionRefs}/>

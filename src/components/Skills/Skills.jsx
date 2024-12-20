@@ -5,14 +5,14 @@ function Skills({ language, sectionRefs }) {
     <section
       id="skills"
       ref={(el) => (sectionRefs.current[2] = el)}
-      className="bg-light dark:bg-dark py-12 border-b-4 border-b-gray-200"
+      className="bg-light dark:bg-dark py-14 border-b-4 border-b-gray-200"
     >
       <h2 className="text-2xl font-semibold text-center mb-4 dark:text-gray-200 pixel">
         {language === "ES" ? "Habilidades técnicas" : "Technical skills"}
       </h2>
 
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-6">
           {(language === "ES" ? skills : skills_en).map((skill, index) => (
             <details
               key={index}

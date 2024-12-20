@@ -17,7 +17,7 @@ function Home({ language, isDarkMode, sectionRefs }) {
     <section
       id="home"
       ref={(el) => (sectionRefs.current[0] = el)}
-      className="relative bg-gradient-to-b bg-light dark:bg-dark border-b-4 border-b-gray-200 pixel"
+      className="relative bg-gradient-to-b bg-light dark:bg-dark border-b-4 border-b-gray-200 pixel py-14"
     >
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"></canvas>
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-8 p-6 md:p-12 ">
